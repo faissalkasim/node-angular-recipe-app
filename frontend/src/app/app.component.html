@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <span>Recipe app</span>
+  <span class="fill-remaining-space"></span>
+  <a class="header-link" routerLink="new-recipe" *ngIf="isAuth">New Recipe</a>
+  <a class="header-link" routerLink="recipe-list" *ngIf="isAuth">Recipe List</a>
+  <a class="header-link" routerLink="login" *ngIf="!isAuth">Login</a>
+  <a class="header-link" routerLink="signup" *ngIf="!isAuth">Sign up</a>
+</mat-toolbar>
+<router-outlet></router-outlet>
